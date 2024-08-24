@@ -1,0 +1,19 @@
+name: Auto Commit LeetCode Solutions
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '30 18 * * *'  # Runs daily at 6:30 PM UTC (which is midnight IST)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Commit and Push Script
+        run: ./commit_and_push.sh
