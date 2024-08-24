@@ -6,6 +6,7 @@ on:
       - main
   schedule:
     - cron: '45 18 * * *'  # Runs daily at 6:45 PM UTC
+  workflow_dispatch:  # Enables manual triggering
 
 jobs:
   build:
