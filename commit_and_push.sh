@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Set Git identity
+git config --global user.email "tejassp18@gmail.com"
+git config --global user.name "Tejas Parandekar"
+
 # Navigate to your solutions directory
 cd "$(dirname "$0")"
 
