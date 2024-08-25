@@ -13,6 +13,7 @@ echo "Current directory: $(pwd)"
 #echo "Fetching and merging latest changes..."
 #git fetch origin main || { echo 'Git fetch failed'; exit 1; }
 #git merge origin/main || { echo 'Git merge failed'; exit 1; }
+#new comment
 
 echo "Listing files..."
 ls -la || { echo 'Failed to list files'; exit 1; }
