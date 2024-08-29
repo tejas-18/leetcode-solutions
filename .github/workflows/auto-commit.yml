@@ -1,15 +1,16 @@
 name: Auto Commit LeetCode Solutions
 
-#on:
-#  push:
-#    branches:
-#      - main
-#  schedule:
-#    - cron: '15 7 * * *'  # Runs daily at 7:15 AM UTC
-#  workflow_dispatch:  # Enables manual triggering
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '15 7 * * *'  # Runs daily at 7:15 AM UTC
+  workflow_dispatch:  # Enables manual triggering
 
 jobs:
   build:
+    if: false  # This condition will prevent the job from running
     runs-on: ubuntu-latest
 
     steps:
